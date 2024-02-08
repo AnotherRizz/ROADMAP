@@ -34,3 +34,23 @@ var tambahPenumpang =function (namaPenumpang, penumpang){
     }
     
 }
+
+
+
+var penumpang =['kiki','adi','aik'];
+
+var hapusPenumpang = function(namaPenumpang,penumpamg){
+    if( penumpang.length == 0){
+        alert('angkot masih kosong')
+    }else
+    for( var i =0 ; i< penumpamg.length;i ++){
+        if( penumpang [i] == namaPenumpang){
+            penumpang[i] = undefined;
+            return penumpang;
+        }else if (i == penumpang.length -1){
+            console.log(namaPenumpang + ' itu tidak ada di dalam angkot')
+        }
+    }
+    return penumpang;
+   
+}
